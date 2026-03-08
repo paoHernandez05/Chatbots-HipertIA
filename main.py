@@ -1,12 +1,10 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from rag_core import responder_pregunta_presion, responder_pregunta_glucosa
-
-app = FastAPI()
-
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
+
 
 # Habilitar CORS
 app.add_middleware(
@@ -21,18 +19,11 @@ app.add_middleware(
 class PreguntaRequest(BaseModel):
     pregunta: str
 
-@app.post("/preguntarBP")
+@app.post("/preguntar")
 def preguntar(data: PreguntaRequest):
     try:
-        respuesta = responder_pregunta_presion(data.pregunta)
+        respuesta = responder_pregunta(data.pregunta)
         return {"respuesta": respuesta}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-@app.post("/preguntarGlucosa")
-def preguntar(data: PreguntaRequest):
-    try:
-        respuesta = responder_pregunta_glucosa(data.pregunta)
-        return {"respuesta": respuesta}
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))

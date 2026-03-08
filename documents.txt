@@ -1,0 +1,300 @@
+# GLUCOSA EN LA SANGRE
+
+## Definición
+
+La glucosa en sangre alta (hiperglucemia) es una condición en la que el nivel de azúcar en la sangre es demasiado elevado.  
+Las mediciones se expresan en mg/dL (miligramos por decilitro).
+
+Valores de referencia:
+
+- Normal en ayunas: menor a 100 mg/dL
+- Prediabetes: entre 100 y 125 mg/dL
+- Diabetes: 126 mg/dL o más en ayunas en mediciones repetidas
+- Hiperglucemia significativa: más de 200 mg/dL en cualquier momento con síntomas
+
+Tipos de medición:
+
+- **Glucosa en ayunas:** medición después de 8 horas sin ingerir alimentos.
+- **Glucosa posprandial:** medición 1–2 horas después de comer.
+
+---
+
+## Síntomas
+
+La hiperglucemia puede presentar los siguientes síntomas:
+
+- Sed excesiva
+- Micción frecuente
+- Fatiga
+- Visión borrosa
+- Hambre intensa
+- Heridas que tardan en sanar
+
+Muchas personas pueden no presentar síntomas en etapas tempranas.
+
+---
+
+## Factores de riesgo
+
+Factores que aumentan el riesgo de hiperglucemia o diabetes:
+
+- Edad avanzada
+- Obesidad o sobrepeso
+- Falta de ejercicio físico
+- Dieta alta en azúcares refinados
+- Consumo excesivo de alcohol
+- Estrés crónico
+- Antecedentes familiares de diabetes
+
+---
+
+## Tipos de diabetes
+
+### Diabetes tipo 1
+Enfermedad autoinmune en la que el cuerpo deja de producir insulina.  
+Suele aparecer en la infancia o adolescencia.
+
+### Diabetes tipo 2
+La más común. Se produce por resistencia a la insulina y está asociada a obesidad, sedentarismo y factores genéticos.
+
+### Diabetes gestacional
+Aparece durante el embarazo, generalmente después de la semana 20.
+
+### Hiperglucemia secundaria
+Puede ser causada por enfermedades pancreáticas, trastornos endocrinos o medicamentos como esteroides.
+
+---
+
+## Complicaciones de la hiperglucemia
+
+La hiperglucemia no controlada puede provocar:
+
+- Enfermedad cardiovascular
+- Infarto de miocardio
+- Accidente cerebrovascular
+- Insuficiencia renal
+- Retinopatía diabética (pérdida de visión)
+- Neuropatía (daño nervioso)
+- Amputaciones
+
+---
+
+## Objetivos del tratamiento
+
+Metas clínicas comunes:
+
+- Glucosa en ayunas: 80–130 mg/dL en personas con diabetes
+- Hemoglobina A1c: menor a 7%
+- Índice de masa corporal (IMC): menor a 25 kg/m²
+- Control de carbohidratos en la dieta
+
+---
+
+## Tratamiento
+
+### Cambios en el estilo de vida
+
+- Alimentación saludable
+- Reducción de azúcares refinados
+- Control de porciones
+- Actividad física regular (150 minutos por semana)
+- Control del peso corporal
+
+### Tratamiento farmacológico
+
+Puede incluir medicamentos como:
+
+- Insulina
+- Metformina
+- Sulfonilureas
+- Inhibidores DPP-4
+- Agonistas GLP-1
+- Inhibidores SGLT2
+
+El tratamiento siempre debe ser indicado por un médico.
+
+---
+
+## Alimentación recomendada
+
+Alimentos recomendados:
+
+- Verduras de hoja verde
+- Frutas bajas en azúcar (manzana, berries)
+- Granos integrales
+- Legumbres
+- Proteínas magras como pollo o pescado
+- Nueces y grasas saludables
+
+Se recomienda limitar:
+
+- Azúcares añadidos
+- Bebidas azucaradas
+- Alimentos ultraprocesados
+
+---
+
+## Actividad física
+
+La actividad física ayuda a mejorar el control de la glucosa.
+
+Recomendaciones:
+
+- Ejercicio aeróbico: caminar, nadar o bailar
+- 30–45 minutos por sesión
+- 5 días por semana
+- Comenzar de forma gradual
+
+---
+
+## Recomendaciones generales
+
+- Revisar los niveles de glucosa regularmente
+- Acudir a revisiones médicas periódicas
+- Mantener una dieta equilibrada
+- Controlar el peso corporal
+- Evitar fumar y limitar el consumo de alcohol
+
+---
+
+================================================
+
+# PRESIÓN ARTERIAL
+
+## Definición
+
+La hipertensión arterial es una condición en la que la presión de la sangre contra las paredes de las arterias es demasiado alta.
+
+La presión arterial se expresa con dos valores:
+
+- **Sistólica:** presión cuando el corazón late
+- **Diastólica:** presión cuando el corazón se relaja
+
+Valores de referencia:
+
+- Normal: menor a 120/80 mmHg
+- Elevada: 120–129 / menor de 80
+- Hipertensión: 140/90 mmHg o más en mediciones repetidas
+
+---
+
+## Síntomas
+
+Muchas personas con hipertensión no presentan síntomas.
+
+Cuando aparecen, pueden incluir:
+
+- Dolor de cabeza
+- Mareos
+- Visión borrosa
+- Fatiga
+- Zumbido en los oídos
+
+---
+
+## Factores de riesgo
+
+Factores que aumentan el riesgo de hipertensión:
+
+- Edad avanzada
+- Obesidad
+- Sedentarismo
+- Dieta alta en sodio
+- Consumo excesivo de alcohol
+- Estrés
+- Antecedentes familiares
+
+---
+
+## Complicaciones
+
+La hipertensión no tratada puede provocar:
+
+- Infarto de miocardio
+- Accidente cerebrovascular
+- Insuficiencia renal
+- Daño ocular
+- Enfermedad cardiovascular
+
+---
+
+## Objetivos del tratamiento
+
+Metas recomendadas:
+
+- Presión arterial general: menor a 140/90 mmHg
+- Personas con diabetes: menor a 130/85 mmHg
+- IMC menor a 25 kg/m²
+- Consumo de sodio menor a 2400 mg por día
+
+---
+
+## Tratamiento
+
+### Cambios en el estilo de vida
+
+- Reducir el consumo de sal
+- Mantener peso saludable
+- Actividad física regular
+- Dieta equilibrada
+- Limitar el alcohol
+- Evitar el tabaco
+
+### Tratamiento farmacológico
+
+Puede incluir medicamentos como:
+
+- Diuréticos
+- Betabloqueantes
+- Inhibidores de la ECA
+- Bloqueadores de canales de calcio
+
+El tratamiento debe ser supervisado por un profesional de la salud.
+
+---
+
+## Alimentación recomendada
+
+Se recomienda una dieta rica en:
+
+- Frutas
+- Verduras
+- Granos integrales
+- Legumbres
+- Pescado
+
+Y limitar:
+
+- Sal
+- Grasas saturadas
+- Alimentos ultraprocesados
+
+---
+
+## Actividad física
+
+La actividad física ayuda a reducir la presión arterial.
+
+Recomendaciones:
+
+- Ejercicio aeróbico regular
+- 30–45 minutos
+- 5 días por semana
+
+Ejemplos:
+
+- Caminar
+- Nadar
+- Bailar
+- Ciclismo
+
+---
+
+## Recomendaciones generales
+
+- Medir la presión arterial periódicamente
+- Acudir a revisiones médicas
+- Mantener una dieta saludable
+- Controlar el peso
+- Evitar fumar
+- Reducir el estrés
