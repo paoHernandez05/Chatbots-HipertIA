@@ -1,6 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-from rag_core import responder_pregunta_presion, responder_pregunta_glucosa
+from rag_core import responder_pregunta
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
