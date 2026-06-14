@@ -2,8 +2,8 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
-""" from rag_core import responder_pregunta
- """
+from rag_core import responder_pregunta
+
 from diabetes_predictor import predecir_diabetes
 from hypertension_predictor import predecir_hipertension
 
@@ -131,8 +131,8 @@ def root():
 @app.post("/preguntar")
 def preguntar(data: PreguntaRequest):
     try:
-        #respuesta = responder_pregunta(data.pregunta)
-        return {"respuesta": "Hola"}
+        respuesta = responder_pregunta(data.pregunta)
+        return {"respuesta": respuesta}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
