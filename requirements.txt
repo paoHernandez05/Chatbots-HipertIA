@@ -3,6 +3,8 @@ uvicorn
 numpy
 pandas
 joblib
+scikit-learn
+
 
 openai
 langchain==0.1.16
