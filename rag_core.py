@@ -36,7 +36,7 @@ template = """Eres un asistente médico que responde preguntas sobre:
 - presión arterial
 - hipertensión
 
-Responde de forma clara y breve usando únicamente el contexto proporcionado.
+Responde de forma clara y breve usando únicamente el contexto proporcionado y el historial de mediciones y datos del perfil que se te proporcionan.
 Si la pregunta no está relacionada con estos temas, indícalo amablemente.
 """
 
