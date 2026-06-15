@@ -28,6 +28,7 @@ app.add_middleware(
 
 class PreguntaRequest(BaseModel):
     pregunta: str
+    perfil: str
 
 
 class DiabetesRequest(BaseModel):
