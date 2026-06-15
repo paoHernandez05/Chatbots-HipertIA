@@ -131,7 +131,7 @@ def root():
 @app.post("/preguntar")
 def preguntar(data: PreguntaRequest):
     try:
-        respuesta = responder_pregunta(data.pregunta)
+        respuesta = responder_pregunta(data.pregunta, data.perfil)
         return {"respuesta": respuesta}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))

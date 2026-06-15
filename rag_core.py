@@ -46,6 +46,9 @@ prompt = ChatPromptTemplate.from_template("""{template}
 Contexto:
 {context}
 
+Historial:
+{datos}
+
 Pregunta:
 {input}
 """)
@@ -54,10 +57,11 @@ Pregunta:
 # Cadena RAG
 chain = create_stuff_documents_chain(llm=llm, prompt=prompt)
 
-def responder_pregunta(pregunta: str) -> str:
+def responder_pregunta(pregunta: str, datos: str) -> str:
     respuesta = chain.invoke({
         "template": template,
         "input": pregunta,
-        "context": chunks
+        "context": chunks,
+        "datos": datos
     })
     return respuesta
