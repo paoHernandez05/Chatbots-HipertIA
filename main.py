@@ -28,7 +28,10 @@ app.add_middleware(
 
 class PreguntaRequest(BaseModel):
     pregunta: str
-    perfil: dict
+    perfil: dict = Field(default_factory=dict)
+    historialPresion: list[dict] = Field(default_factory=list)
+    historialGlucosa: list[dict] = Field(default_factory=list)
+    historialConversacion: list[dict] = Field(default_factory=list)
 
 
 class DiabetesRequest(BaseModel):
@@ -132,7 +135,13 @@ def root():
 @app.post("/preguntar")
 def preguntar(data: PreguntaRequest):
     try:
-        respuesta = responder_pregunta(data.pregunta, str(data.perfil))
+        respuesta = responder_pregunta(
+            pregunta=data.pregunta,
+            perfil=data.perfil,
+            historial_presion=data.historialPresion,
+            historial_glucosa=data.historialGlucosa,
+            historial_conversacion=data.historialConversacion,
+        )
         return {"respuesta": respuesta}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))

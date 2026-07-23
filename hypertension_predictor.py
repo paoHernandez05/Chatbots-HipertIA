@@ -30,6 +30,11 @@ _feature_names = joblib.load(os.path.join(_BASE_DIR, "hypertension_feature_names
 _LABELS       = {0: "Sin Hipertensión", 1: "Prehipertensión", 2: "Con Hipertensión"}
 _NIVEL_RIESGO = {0: "Bajo",             1: "Moderado",         2: "Alto"}
 
+# Suavizado bayesiano simétrico aplicado a las probabilidades del bosque.
+# Evita presentar 0 % o 100 % como certezas clínicas cuando los árboles votan
+# de forma prácticamente unánime. No cambia la clase predicha ni el contrato.
+_PROBABILITY_PRIOR_STRENGTH = 2.0
+
 _FEATURE_LABELS_SHORT = {
     "Age":                     "Edad",
     "BMI":                     "IMC",
@@ -183,6 +188,18 @@ def _severidad(contrib_pct_abs: float) -> str:
     return "Bajo"
 
 
+def _regularizar_probabilidades(pred_proba: np.ndarray) -> np.ndarray:
+    """Suaviza probabilidades extremas conservando orden y suma total."""
+    probabilidades = np.asarray(pred_proba, dtype=float)
+    soporte = max(len(getattr(_model, "estimators_", [])), 1)
+    alpha = _PROBABILITY_PRIOR_STRENGTH
+
+    suavizadas = (probabilidades * soporte + alpha) / (
+        soporte + alpha * probabilidades.size
+    )
+    return suavizadas / np.sum(suavizadas)
+
+
 # ─────────────────────────────────────────────
 # Función principal de predicción
 # ─────────────────────────────────────────────
@@ -220,8 +237,9 @@ def predecir_hipertension(datos: dict) -> dict:
     paciente         = pd.DataFrame([datos])[_feature_names]
     valores_paciente = paciente.values[0]
 
-    pred_class = int(_model.predict(paciente)[0])
-    pred_proba = _model.predict_proba(paciente)[0]
+    pred_class     = int(_model.predict(paciente)[0])
+    pred_proba_raw = _model.predict_proba(paciente)[0]
+    pred_proba     = _regularizar_probabilidades(pred_proba_raw)
 
     # SHAP — referenciado a la clase predicha
     shap_values = _explainer.shap_values(paciente)
@@ -248,7 +266,8 @@ def predecir_hipertension(datos: dict) -> dict:
         "Corregido":   fue_corr,
     }).sort_values("Impacto", key=abs, ascending=False)
 
-    puntuacion = min(100, round(float(pred_proba[1]) * 50 + float(pred_proba[2]) * 100))
+    puntuacion_continua = float(pred_proba[1]) * 50 + float(pred_proba[2]) * 100
+    puntuacion = int(np.clip(round(puntuacion_continua), 1, 99))
 
     top_factores = impacto_df[impacto_df["Variable"] != "Gender"].head(4)
     factores_ui  = [
@@ -274,7 +293,7 @@ def predecir_hipertension(datos: dict) -> dict:
         recomendaciones.append("Control médico anual preventivo")
 
     return {
-        "puntuacion":    int(puntuacion),
+        "puntuacion":    puntuacion,
         "clasificacion": _LABELS[pred_class],
         "nivel_riesgo":  _NIVEL_RIESGO[pred_class],
         "probabilidades": {
